@@ -1,10 +1,14 @@
+using FluentAssertions.Common;
+using Sheenam.Api.Brokers.Storages;
+
 internal class Program
 {
     private static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
 
- 
+         
+        builder.Services.AddDbContext<StorageBroker>();
         builder.Services.AddControllers();
          builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
