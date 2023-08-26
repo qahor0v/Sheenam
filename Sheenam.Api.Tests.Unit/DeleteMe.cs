@@ -4,7 +4,7 @@ namespace Sheenam.Api.Tests.Unit
     public class DeleteMe
     {
         [Fact]
-        public void ShouldBeTrue() => Assert.True(true);
+        public void ShouldBeSuccess() => Assert.True(true);
 
     }
 }
