@@ -1,8 +1,11 @@
-﻿namespace Sheenam.Api.Models.Foundation.Guests
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Sheenam.Api.Models.Foundation.Guests
 {
+    [Keyless]
     public class Guest
     {
-        public Guest Id { get; set; }
+        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
