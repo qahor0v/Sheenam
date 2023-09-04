@@ -17,7 +17,7 @@ namespace Sheenam.Api.Brokers.Storages
         {
 
             string connectionString = 
-                this.configuration.GetConnectionString(name: "DefaultConnection");
+                this.configuration.GetConnectionString(name: "DefaultConnection")??"";
 
             optionsBuilder.UseSqlServer(connectionString);
 
